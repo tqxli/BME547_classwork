@@ -36,13 +36,17 @@ def interface():
     print("My Program")
     print("Options:")
     print("1 - Run HDL Analysis")
+    print("2 - Run LDL Analysis")
     print("9 - Quit")
     choice = input("Enter your choice: ")
     while choice != '9':        
         if choice == '1':
-            driver()
+            driver("HDL")
+        elif choice == '2':
+            driver("LDL")
         print("Options:")
         print("1 - Run HDL Analysis")
+        print("2 - Run LDL Analysis")
         print("9 - Quit")
         choice = input("Enter your choice: ")
 
