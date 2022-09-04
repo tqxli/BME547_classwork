@@ -21,6 +21,14 @@ def check_LDL(ldl):
     else:
         return "Very High"
 
+def check_total_cholesterol(total_cholesterol):
+    if total_cholesterol < 200:
+        return "Normal"
+    elif total_cholesterol < 240:
+        return "Borderline High"
+    else:
+        return "High"
+
 def driver(test):
     level = get_user_input(test)
     if test == "HDL":
