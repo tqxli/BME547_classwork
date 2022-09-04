@@ -30,11 +30,21 @@ def check_total_cholesterol(total_cholesterol):
         return "High"
 
 def driver(test):
-    level = get_user_input(test)
     if test == "HDL":
+        level = get_user_input(test)
         results = check_HDL(level)
     elif test == "LDL":
+        level = get_user_input(test)
         results = check_LDL(level)
+    elif test == "Total Cholesterol":
+        hdl = get_user_input("HDL")
+        results = check_HDL(hdl)
+        output_results("HDL", hdl, results)
+        ldl = get_user_input("LDL")
+        results = check_LDL(ldl)
+        output_results("LDL", ldl, results)
+        level = hdl + ldl
+        results = check_total_cholesterol(level)
     output_results(test, level, results)
 
 def output_results(test, level, results):
