@@ -21,10 +21,13 @@ def check_LDL(ldl):
     else:
         return "Very High"
 
-def driver():
-    hdl_level = get_user_input()
-    results = check_HDL(hdl_level)
-    output_results(hdl_level, results)
+def driver(test):
+    level = get_user_input(test)
+    if test == "HDL":
+        results = check_HDL(level)
+    elif test == "LDL":
+        results = check_LDL(level)
+    output_results(test, level, results)
 
 def output_results(test, level, results):
     print("Your {} level is {}. This is {}.".format(test, level, results))
