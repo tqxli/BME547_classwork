@@ -24,10 +24,13 @@ def output_results(hdl_level, results):
 def interface():
     print("My Program")
     print("Options:")
+    print("1 - Run HDL Analysis")
     print("9 - Quit")
     choice = input("Enter your choice: ")
     while choice != '9':
         choice = input("Enter your choice: ")
+        if choice == '1':
+            driver()
     return
    
 interface()
