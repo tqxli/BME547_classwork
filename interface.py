@@ -1,3 +1,7 @@
+def get_user_input():
+    level = input("Enter: ")
+    return level
+
 def interface():
     print("My Program")
     print("Options:")
