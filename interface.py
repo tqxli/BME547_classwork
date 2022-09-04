@@ -31,6 +31,9 @@ def interface():
     while choice != '9':        
         if choice == '1':
             driver()
+        print("Options:")
+        print("1 - Run HDL Analysis")
+        print("9 - Quit")
         choice = input("Enter your choice: ")
 
     return
