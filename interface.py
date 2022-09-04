@@ -55,6 +55,7 @@ def interface():
     print("Options:")
     print("1 - Run HDL Analysis")
     print("2 - Run LDL Analysis")
+    print("3 - Run Total Cholesterol Analysis")
     print("9 - Quit")
     choice = input("Enter your choice: ")
     while choice != '9':        
@@ -62,9 +63,12 @@ def interface():
             driver("HDL")
         elif choice == '2':
             driver("LDL")
+        elif choice == '3':
+            driver("Total Cholesterol")
         print("Options:")
         print("1 - Run HDL Analysis")
         print("2 - Run LDL Analysis")
+        print("3 - Run Total Cholesterol Analysis")
         print("9 - Quit")
         choice = input("Enter your choice: ")
 
