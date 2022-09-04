@@ -1,5 +1,5 @@
-def get_user_input():
-    level = input("Enter: ")
+def get_user_input(test):
+    level = input("Enter your {} level: ".format(test))
     level = float(level)
     return level
 
@@ -26,8 +26,8 @@ def driver():
     results = check_HDL(hdl_level)
     output_results(hdl_level, results)
 
-def output_results(hdl_level, results):
-    print("Your HDL level is {}. This is {}.".format(hdl_level, results))
+def output_results(test, level, results):
+    print("Your {} level is {}. This is {}.".format(test, level, results))
 
 def interface():
     print("My Program")
