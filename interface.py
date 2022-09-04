@@ -3,6 +3,7 @@ from cgitb import handler
 
 def get_user_input():
     level = input("Enter: ")
+    level = float(level)
     return level
 
 def check_HDL(hdl):
