@@ -1,3 +1,6 @@
+from cgitb import handler
+
+
 def get_user_input():
     level = input("Enter: ")
     return level
@@ -12,7 +15,11 @@ def check_HDL(hdl):
 
 def driver():
     hdl_level = get_user_input()
-    return check_HDL(hdl_level)
+    results = check_HDL(hdl_level)
+    output_results(hdl_level, results)
+
+def output_results(hdl_level, results):
+    print("Your HDL level is {}. This is {}".format(hdl_level, results))
 
 def interface():
     print("My Program")
