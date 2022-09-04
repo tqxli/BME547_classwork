@@ -1,6 +1,3 @@
-from cgitb import handler
-
-
 def get_user_input():
     level = input("Enter: ")
     level = float(level)
