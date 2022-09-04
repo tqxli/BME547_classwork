@@ -10,6 +10,10 @@ def check_HDL(hdl):
     else:
         return "Low"
 
+def driver():
+    hdl_level = get_user_input()
+    return check_HDL(hdl_level)
+
 def interface():
     print("My Program")
     print("Options:")
