@@ -20,7 +20,7 @@ def driver():
     output_results(hdl_level, results)
 
 def output_results(hdl_level, results):
-    print("Your HDL level is {}. This is {}".format(hdl_level, results))
+    print("Your HDL level is {}. This is {}.".format(hdl_level, results))
 
 def interface():
     print("My Program")
