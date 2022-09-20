@@ -21,4 +21,15 @@ def test_check_LDL(level, expected):
     from interface import check_LDL
 
     answer = check_LDL(level)
+    assert answer == expected  
+
+@pytest.mark.parametrize("level, expected", [
+    (180, "Normal"),
+    (220, "Borderline High"),
+    (249, "High"),
+])
+def test_total_cholesterol(level, expected):
+    from interface import check_total_cholesterol
+
+    answer = check_total_cholesterol(level)
     assert answer == expected   
