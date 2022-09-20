@@ -1,14 +1,12 @@
-def test_check_HDL():
+import pytest 
+
+@pytest.mark.parametrize("level, expected", [
+    (85, "Normal"),
+    (45, "Borderline Low"),
+    (20, "Low"),
+])
+def test_check_HDL(level, expected):
     from interface import check_HDL
 
-    answer = check_HDL(85)
-    expected = "Normal"
-    assert answer == expected
-
-    answer = check_HDL(45)
-    expected = "Borderline Low"
-    assert answer == expected
-
-    answer = check_HDL(20)
-    expected = "Low"
-    assert answer == expected    
+    answer = check_HDL(level)
+    assert answer == expected  
