@@ -29,5 +29,9 @@ def convert_lb_to_kg(weight_lb):
     return weight_kg
 
 
+def add_number(a, b):
+    return a + b
+
+
 if __name__ == "__main__":
     input_weight_entry()
