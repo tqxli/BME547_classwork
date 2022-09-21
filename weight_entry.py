@@ -14,7 +14,7 @@ def parse_weight_input(weight_input):
     try:
         weight = float(weight) # be able to take both int and float inputs
     except:
-        return
+        return None
     units = units.lower() # for unified unit names
     if units in ["lb", "pound"]:
         weight_kg = convert_lb_to_kg(weight)
