@@ -59,7 +59,7 @@ def output_results(test, level, results):
 def interface():
     print("My Program")
     keep_running = True
-    while keep_running:     
+    while keep_running:
         print("Options:")
         print("1 - Run HDL Analysis")
         print("2 - Run LDL Analysis")
@@ -77,5 +77,3 @@ def interface():
             keep_running = False
 
     return
-   
-# interface()
